@@ -10,10 +10,6 @@
     <link href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" rel="stylesheet" integrity="sha384-Xqcy5ttufkC3rBa8EdiAyA1VgOGrmel2Y+wxm4K3kI3fcjTWlDWrlnxyD6hOi3PF" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="{% static 'landing/style.css' %}">
 
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha256-/SIrNqv8h6QGKDuNoLGA4iret+kyesCkHGzVUUV0shc=" crossorigin="anonymous"></script>
-
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.3.0/Chart.bundle.js'></script>
-
 </head>
 
 <body>
@@ -34,8 +30,6 @@
         <a id='button' href="{{game.link}}" class="btn btn-primary btn-lg">Play Game</a> {% if error_message %}
         <p><strong>{{ error_message }}</strong></p>{% endif %}
     </div>
-
-
 
 <ul>
   {% for poll in game.poll_set.all %}
